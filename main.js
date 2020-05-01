@@ -8,3 +8,14 @@ var tom = {
 	}
 };
 button.addEventListener("click", tom.sayHello.bind(tom));
+
+// arguments demo
+function sum(){
+	let result = 0;
+	for (let i = 0 ; i < arguments.length; i++) {
+		result += arguments[i];
+	}	
+	return result;
+}
+console.log(sum(1,2,3,4,6,12,7,5,4));
+
